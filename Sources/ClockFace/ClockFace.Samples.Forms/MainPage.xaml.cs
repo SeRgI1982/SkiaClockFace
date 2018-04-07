@@ -1,4 +1,5 @@
 ﻿using System;
+using Xamarin.Forms;
 
 namespace ClockFace.Samples.Forms
 {
@@ -9,9 +10,11 @@ namespace ClockFace.Samples.Forms
 			InitializeComponent();
 		}
 
-	    private void OnInvalidateClicked(object sender, EventArgs e)
+	    private void OnSliderValueChanged(object sender, ValueChangedEventArgs e)
 	    {
-	        CanvasView.InvalidateSurface();
+	        var newStep = Math.Round(e.NewValue / 1d);
+	        var slider = (Slider) sender;
+	        slider.Value = newStep * 1d;
 	    }
-	}
+    }
 }
