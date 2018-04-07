@@ -2,6 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Łukasz Szumyło</Authors>
+    <Company>Łukasz Szumyło</Company>
+    <Product>ClockFace for cross-platform apps</Product>
+    <Description>Create cross-platform customizable ClockFace.</Description>
+    <Copyright>Copyright 2018</Copyright>
+    <PackageLicenseUrl>https://github.com/SeRgI1982/SkiaClockFace/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/SeRgI1982/SkiaClockFace/</PackageProjectUrl>
+    <PackageTags>xamarin forms ios android skia</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

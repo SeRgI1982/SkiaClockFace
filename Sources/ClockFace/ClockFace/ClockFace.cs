@@ -127,7 +127,8 @@ namespace ClockFace
             canvas.Restore();
 
             // Duration indicator
-            var rotateAngle = Convert.ToSingle(Duration * SweepAngle / (HourIndicators * MinutesInHour));
+            var durationInMinutes = Duration / 60;
+            var rotateAngle = Convert.ToSingle(durationInMinutes * SweepAngle / (HourIndicators * MinutesInHour));
             canvas.RotateDegrees(rotateAngle);
 
             var durationIndicatorShadowPath = SKPath.ParseSvgPathData($"M -8 0 L -2 {-radius - 30} L 2 {-radius - 30} L 14 0 Z");
